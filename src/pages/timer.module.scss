@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+
+  > img {
+    width: clamp(300px, 100%, 500px);
+    height: auto;
+  }
+}
+
+.time-container-1,
+.time-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 16px;
+
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 8px;
+  }
+}
+
+.time-container-1 > div > span:nth-of-type(1) {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.time-container-2 > div > span:nth-of-type(1) {
+  font-size: 20px;
+  font-weight: 500;
+}

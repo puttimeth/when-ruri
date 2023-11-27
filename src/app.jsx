@@ -1,10 +1,15 @@
 import "./app.scss";
+import { FooterSection, HeaderSection, TimerSection } from "pages";
 import React from "react";
 
 function App() {
   return (
     <div className="app">
-      <h1>Ruri Dragon!</h1>
+      <div className="content-wrapper">
+        <HeaderSection />
+        <TimerSection />
+        <FooterSection />
+      </div>
     </div>
   );
 }
