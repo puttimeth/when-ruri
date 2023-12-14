@@ -1,10 +1,11 @@
 import styles from "./want-more.module.scss";
 import IsRuriBackProfile from "images/want-more/is-ruri-back-profile.jpg";
+import LatestUpdateProfile from "images/want-more/latest-update-profile.jpg";
 import OneshotProfile from "images/want-more/oneshot-profile.jpg";
 import VoiceComicProfile from "images/want-more/voice-comic-profile.png";
 import React from "react";
 
-const Card = ({ href, profile, title, content }) => {
+const Card = ({ href, profile, title, content, ...rest }) => {
   return (
     <a
       className="card text-start text-decoration-none"
@@ -12,6 +13,7 @@ const Card = ({ href, profile, title, content }) => {
       href={href}
       rel="noopener noreferrer"
       target="_blank"
+      {...rest}
     >
       <div className="row g-0">
         <div className="col-md-4">
@@ -33,11 +35,32 @@ export const WantMoreSection = () => {
     <div className={styles.container}>
       <h4>Want More of Rurium?</h4>
       <Card
+        href="https://twitter.com/SHINDO_MASAOKI/status/1734860731374543309"
+        id="latest-update"
+        profile={LatestUpdateProfile}
+        title="Latest Update"
+        content={
+          <>
+            <div>
+              Author confirm that he is fine right now and will try his best for
+              the next year. (Post on 13/12/2023)
+            </div>
+            <a
+              href="https://twitter.com/Josuke8B/status/1734876309497471464"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              In case you want translation.
+            </a>
+          </>
+        }
+      />
+      <Card
         href="https://mangadex.org/title/0a2fd70d-e4de-49fb-8e81-89311d46b329/ruri-dragon"
         profile={OneshotProfile}
         title={
           <>
-            Oneshot<sup>[3]</sup>
+            Oneshot<sup>[2]</sup>
           </>
         }
         content="The content is similar to chapter 1 but has some differences in

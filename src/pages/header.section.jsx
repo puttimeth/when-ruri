@@ -2,6 +2,10 @@ import styles from "./header.module.scss";
 import React from "react";
 
 export const HeaderSection = () => {
+  const scrollTo = (id) => {
+    document.getElementById(id)?.scrollIntoView?.();
+  };
+
   return (
     <div className={styles.container}>
       <h1>
@@ -16,7 +20,14 @@ export const HeaderSection = () => {
         <span> Is Back?</span>
       </h1>
       <h5>
-        Sadly, we don't know yet.<sup>[1]</sup>
+        <a
+          href="#"
+          onClick={() => {
+            scrollTo("latest-update");
+          }}
+        >
+          Maybe new dose in 2024?
+        </a>
       </h5>
     </div>
   );

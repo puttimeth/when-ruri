@@ -63,7 +63,7 @@ export const TimerSection = () => {
               </div>
             </div>
             <h6>
-              Since last dose of Ruri Dragon<sup>[2]</sup>
+              Since last dose of Ruri Dragon<sup>[1]</sup>
             </h6>
           </>
         )}

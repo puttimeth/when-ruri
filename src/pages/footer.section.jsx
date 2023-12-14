@@ -4,22 +4,9 @@ import React from "react";
 export const FooterSection = () => {
   return (
     <div className={styles.container}>
+      <p>[1] Count from midnight on July 25, 2022, Japan time</p>
       <p>
-        <span>[1] According to </span>
-        <a
-          href="https://twitter.com/SHINDO_MASAOKI"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          @SHINDO_MASAOKI twitter
-        </a>
-        <span>
-          , there has been no announcement regarding the continuation yet.
-        </span>
-      </p>
-      <p>[2] Count from midnight on July 25, 2022, Japan time</p>
-      <p>
-        [3] I couldn't locate the official oneshot release, so I'm providing the
+        [2] I couldn't locate the official oneshot release, so I'm providing the
         link from Mangadex instead.
       </p>
       <p>
