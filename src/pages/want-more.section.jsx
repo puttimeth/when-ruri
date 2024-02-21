@@ -35,25 +35,11 @@ export const WantMoreSection = () => {
     <div className={styles.container}>
       <h4>Want More of Rurium?</h4>
       <Card
-        href="https://twitter.com/SHINDO_MASAOKI/status/1734860731374543309"
+        href="https://twitter.com/SHINDO_MASAOKI/status/1760137265307656235"
         id="latest-update"
         profile={LatestUpdateProfile}
         title="Latest Update"
-        content={
-          <>
-            <div>
-              Author confirm that he is fine right now and will try his best for
-              the next year. (Post on 13/12/2023)
-            </div>
-            <a
-              href="https://twitter.com/Josuke8B/status/1734876309497471464"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              In case you want translation.
-            </a>
-          </>
-        }
+        content="Ruri Dragon will publish 5 chapters straight before move to bi-weekly schedule."
       />
       <Card
         href="https://mangadex.org/title/0a2fd70d-e4de-49fb-8e81-89311d46b329/ruri-dragon"

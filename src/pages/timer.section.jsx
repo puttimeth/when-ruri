@@ -1,15 +1,14 @@
 import styles from "./timer.module.scss";
 import dayjs from "dayjs";
 import duration from "dayjs/plugin/duration";
-import SadImg1 from "images/sad1.png";
-import SadImg2 from "images/sad2.png";
+import ItHappenedImg from "images/it-happened.png";
 import React, { useEffect, useState } from "react";
 
 dayjs.extend(duration);
 
-const lastUpdatedTime = dayjs("2022-07-25T00:00:00+09:00");
+const newUpdatedTime = dayjs("2024-03-04T00:00:00+09:00");
 
-const imagesUrl = [SadImg1, SadImg2];
+const imagesUrl = [ItHappenedImg];
 
 export const TimerSection = () => {
   const [duration, setDuration] = useState();
@@ -20,7 +19,7 @@ export const TimerSection = () => {
   useEffect(() => {
     const updateTimer = setInterval(() => {
       const currentTime = dayjs();
-      const dur = dayjs.duration(currentTime.diff(lastUpdatedTime));
+      const dur = dayjs.duration(newUpdatedTime.diff(currentTime));
       setDuration(dur);
     }, 1000);
 
@@ -63,7 +62,7 @@ export const TimerSection = () => {
               </div>
             </div>
             <h6>
-              Since last dose of Ruri Dragon<sup>[1]</sup>
+              Until Ruri landing<sup>[1]</sup>
             </h6>
           </>
         )}

@@ -4,7 +4,7 @@ import React from "react";
 export const FooterSection = () => {
   return (
     <div className={styles.container}>
-      <p>[1] Count from midnight on July 25, 2022, Japan time</p>
+      <p>[1] Count from midnight on March 4, 2024, Japan time</p>
       <p>
         [2] I couldn't locate the official oneshot release, so I'm providing the
         link from Mangadex instead.

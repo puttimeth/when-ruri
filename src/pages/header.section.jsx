@@ -26,7 +26,7 @@ export const HeaderSection = () => {
             scrollTo("latest-update");
           }}
         >
-          Maybe new dose in 2024?
+          Ruri will be back in March 4, 2024!!!
         </a>
       </h5>
     </div>
